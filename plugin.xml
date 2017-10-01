@@ -20,7 +20,7 @@
         <header-file src="src/ios/iOSFrameworks.h" />
         <source-file src="src/ios/iOSFrameworks.m" />
         <!-- Add your additional iOS frameworks below -->
-        <framework src="PassKit.framework" />
+        <framework src="PassKit.framework" weak="true" />
         <!-- End Additional Frameworks -->
     </platform>
 </plugin>
