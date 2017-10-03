@@ -5,6 +5,8 @@ If there are any additional frameworks you want in your iOS build, but they have
 Just edit the example frameworks in the plugin.xml file to automatically add them on build/prepare.
 There are currently some frameworks added there as examples. Be sure to remove those you don't need and add those you do.
 
+This version adds the PassKit framework to the iOS build.
+
 ## Installation
 	cordova plugin add cordova-plugin-ios-frameworks
 
@@ -22,8 +24,7 @@ Add/Remove iOS frameworks that you would like automatically added you your Xcode
 The frameworks can be edited in the plugin.xml file in this section:
 
         <!-- Add your additional iOS frameworks below -->
-            <framework src="AdSupport.framework" />
-            <framework src="libdispatch.tbd" />
+            <framework src="PassKit.framework" weak="true" />
         <!-- End Additional Frameworks -->
 
 
